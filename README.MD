@@ -12,7 +12,7 @@ OAuth 2.0 gem https://github.com/icoretech/omniauth-spotify
 json object structure - https://developer.spotify.com/documentation/web-api/reference/object-model/#playlist-track-object
 * rspotify gem https://rdoc.info/github/guilhermesad/rspotify/master/frames
 * DO NOT FORGET that you have to update spotify console settings to update Redirect URIs.
-
+* 3:00 Its amazing how much rails i forgot.  reviewing and trying to get rails s to show something
 
 * Initial json objects to save to DB
 
