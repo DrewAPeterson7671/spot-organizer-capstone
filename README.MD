@@ -11,7 +11,7 @@
 OAuth 2.0 gem https://github.com/icoretech/omniauth-spotify
 json object structure - https://developer.spotify.com/documentation/web-api/reference/object-model/#playlist-track-object
 * rspotify gem https://rdoc.info/github/guilhermesad/rspotify/master/frames
-
+* DO NOT FORGET that you have to update spotify console settings to update Redirect URIs.
 
 
 * Initial json objects to save to DB
@@ -22,10 +22,6 @@ json object structure - https://developer.spotify.com/documentation/web-api/refe
 * name - name of playlists
 * tracks - array of playlist track objects
 
-*playlist Track Object*
-* added_at - playlist origin date
-* is_local - for non-spot tracks on local machine
-* tracks
 
 *Saved Track Object*
 * added_at - timestamp for added track
@@ -41,6 +37,14 @@ json object structure - https://developer.spotify.com/documentation/web-api/refe
 * track_number
 * uri - Spotify URI
 * is_local
+
+*Need to verify new columns to add to record*
+* genre
+* Star Ratings
+* Comments
+* Smart Playlist tags, several
+
+
 
 
 genres is in the Artist and Album objects
@@ -59,3 +63,6 @@ DELETE	/v1/playlists/{playlist_id}/tracks	Remove Tracks from a Playlist	-
 PUT	/v1/playlists/{playlist_id}/tracks	Reorder a Playlist's Tracks	-
 PUT	/v1/playlists/{playlist_id}/tracks	Replace a Playlist's Tracks	-
 PUT	/v1/playlists/{playlist_id}/images	Upload a Custom Playlist Cover Image
+
+
+Credit - https://github.com/guilhermesad/rspotify
