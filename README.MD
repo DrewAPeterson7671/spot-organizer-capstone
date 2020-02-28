@@ -6,3 +6,6 @@
 * https://documenter.getpostman.com/view/583/spotify-playlist-generator/2MtDWP?version=latest
 * 10:30 started setup of files and diverted to prioritize making api connect in postman before anything else.
 * 11:30 SUCCESSFUL postman connection to MY OWN playlists of my profile including playlists authored and shared from others.  YAYYYYYYYY!
+12:00 to 1 - lunch
+* 1:00 to 1:30 try to get a feel for the structure of the json object return.
+https://github.com/icoretech/omniauth-spotify
