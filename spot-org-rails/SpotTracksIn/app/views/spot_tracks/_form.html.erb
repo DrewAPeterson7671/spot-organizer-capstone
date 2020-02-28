@@ -1,0 +1,17 @@
+<%= form_with(model: spot_track, local: true) do |form| %>
+  <% if spot_track.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(spot_track.errors.count, "error") %> prohibited this spot_track from being saved:</h2>
+
+      <ul>
+      <% spot_track.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

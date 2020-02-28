@@ -1,0 +1,2 @@
+class SpotTrack < ApplicationRecord
+end
