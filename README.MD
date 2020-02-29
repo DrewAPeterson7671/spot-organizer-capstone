@@ -14,6 +14,9 @@ json object structure - https://developer.spotify.com/documentation/web-api/refe
 * DO NOT FORGET that you have to update spotify console settings to update Redirect URIs.
 * 3:00 Its amazing how much rails i forgot.  reviewing and trying to get rails s to show something
 
+
+
+
 * Initial json objects to save to DB
 
 *Playlist object*
@@ -47,22 +50,22 @@ json object structure - https://developer.spotify.com/documentation/web-api/refe
 
 
 
-genres is in the Artist and Album objects
+* genres is in the Artist and Album objects
 
 
-METHOD	ENDPOINT	USAGE	RETURNS
-POST	/v1/playlists/{playlist_id}/tracks	Add Tracks to a Playlist	-
-PUT	/v1/playlists/{playlist_id}	Change a Playlist's Details	-
-POST	/v1/users/{user_id}/playlists	Create a Playlist	-
-GET	/v1/me/playlists	Get a List of Current User's Playlists	playlists
-GET	/v1/users/{user_id}/playlists	Get a List of a User's Playlists	playlists
-GET	/v1/playlists/{playlist_id}/images	Get a Playlist Cover Image	list of image objects
-GET	/v1/playlists/{playlist_id}	Get a Playlist	playlist
-GET	/v1/playlists/{playlist_id}/tracks	Get a Playlist's Tracks	tracks
-DELETE	/v1/playlists/{playlist_id}/tracks	Remove Tracks from a Playlist	-
-PUT	/v1/playlists/{playlist_id}/tracks	Reorder a Playlist's Tracks	-
-PUT	/v1/playlists/{playlist_id}/tracks	Replace a Playlist's Tracks	-
-PUT	/v1/playlists/{playlist_id}/images	Upload a Custom Playlist Cover Image
+* METHOD	ENDPOINT	USAGE	RETURNS
+* POST	/v1/playlists/{playlist_id}/tracks	Add Tracks to a Playlist	-
+* PUT	/v1/playlists/{playlist_id}	Change a Playlist's Details	-
+* POST	/v1/users/{user_id}/playlists	Create a Playlist	-
+* GET	/v1/me/playlists	Get a List of Current User's Playlists	playlists
+* GET	/v1/users/{user_id}/playlists	Get a List of a User's Playlists	playlists
+* GET	/v1/playlists/{playlist_id}/images	Get a Playlist Cover Image	list of image objects
+* GET	/v1/playlists/{playlist_id}	Get a Playlist	playlist
+* GET	/v1/playlists/{playlist_id}/tracks	Get a Playlist's Tracks	tracks
+* DELETE	/v1/playlists/{playlist_id}/tracks	Remove Tracks from a Playlist	-
+* PUT	/v1/playlists/{playlist_id}/tracks	Reorder a Playlist's Tracks	-
+* PUT	/v1/playlists/{playlist_id}/tracks	Replace a Playlist's Tracks	-
+* PUT	/v1/playlists/{playlist_id}/images	Upload a Custom Playlist Cover Image
 
 
 Credit - https://github.com/guilhermesad/rspotify
