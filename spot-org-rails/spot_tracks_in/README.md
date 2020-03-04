@@ -10,9 +10,25 @@ bundle rake db:create rake db:migrate rake db:test:prepare rake db:seed
 
 && Add group :development, :test do gem 'byebug', platforms: [:mri, :mingw, :x64_mingw] gem 'rspec-rails' gem 'launchy' gem 'pry' end to Gemfile
 
+bundle install
+bundle exec figaro install
 bundle exec rails generate rspec:install (in Terminal)
+rake db:create
+rake db:migrate
+rake db:test:prepare
+rails s
+
+
+figaro
+https://github.com/laserlemon/figaro
+create figaro files, see email.
+
+
+
 
 run rails server in Root dir of project [rails s]
+
+
 
 rake db:create
 

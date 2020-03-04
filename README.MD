@@ -15,7 +15,7 @@ json object structure - https://developer.spotify.com/documentation/web-api/refe
 * 3:00 Its amazing how much rails i forgot.  reviewing and trying to get rails s to show something
 
 
-
+bundle exec figaro install
 
 * Initial json objects to save to DB
 
