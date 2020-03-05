@@ -1,3 +1,94 @@
+# README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* Three Places
+
+* # config/application.rb
+
+* RSpotify::authenticate("<your_client_id>", "<your_client_secret>")
+
+* # config/initializers/omniauth.rb
+
+* require 'rspotify/oauth'
+* Rails.application.config.middleware.use OmniAuth::Builder do
+*  provider :spotify, "<your_client_id>", "<your_client_secret>", scope: 'user-read-email playlist-modify-public user-library-read user-library-modify'
+* end
+
+* https://medium.com/@cam_irmas/crazy-train-exploring-the-spotify-api-with-rails-part-1-81eac0475cb1
+
+* https://www.rubydoc.info/github/guilhermesad/rspotify/master/frames
+
+* bundle rake db:create rake db:migrate rake db:test:prepare rake db:seed
+
+
+
+* rails new spot_organizer -d postgresql -T
+* Add gem 'jquery-rails' to GemFile
+* boostrap
+* gems
+* pry
+* launchy
+* rspec-rails
+* figaro
+* bundle exec OmniAuth
+* bundle exec RSpotify
+* bundle exec figaro install
+* bundle exec rails generate rspec:install
+
+
+* && Add group :development, :test do gem 'byebug', platforms: [:mri, :mingw, :x64_mingw] gem 'rspec-rails' gem 'launchy' gem 'pry' end to Gemfile
+
+
+
+* bundle install
+* rake db:create
+* rake db:migrate
+* rake db:test:prepare
+* rake routes
+* rails s
+
+* rails g migration create_[class] (plural)
+
+* rails g scaffold Playlist name:string title:string content:text
+* User usename:string
+* Playlist name:string
+* Track title:string
+* Rate stars:integer
+
+* figaro install   should create - create application.yml file, and gitignore the file.  text: all caps, snake case:""
+**** NEEDS HEROKU MODS FOR PRODUCTION:
+
+https://github.com/laserlemon/figaro
+create figaro files, see email.
+
+* omniauth https://www.youtube.com/watch?v=VeUX3pWn28w
+
+
+
+https://github.com/omniauth/omniauth
+pull fb profile
+URI and starts session
+github
+need callback url
+
+
+
+* rspot
+
 * 8:00 Research Spot API
 * 9:00 trying to understand Spotify URI to log into my account.  My account was created with Facebook login.  So how do I use that in an API?
 * spotify console https://developer.spotify.com/dashboard/applications/0d33cf4dd1554d0ca36a41cca75f7454
@@ -25,11 +116,14 @@ bundle exec figaro install
 * name - name of playlists
 * tracks - array of playlist track objects
 
+* iTunes *
+
 
 *Saved Track Object*
 * added_at - timestamp for added track
 
 *Track Object*
+* TITLE????
 * album
 * artist
 * disc_number
@@ -40,12 +134,61 @@ bundle exec figaro install
 * track_number
 * uri - Spotify URI
 * is_local
+* iTunes * release date
+* iTunes * year
+* iTunes * artist website
+* wiki link
+* discogs link
+* lyrics links
+* iTunes * love
+* bpm
+* sample rate
+*
 
-*Need to verify new columns to add to record*
+
+
+
+*album*
+* iTunes * release date
+* iTunes * album Artist
+* iTunes * compilation
+* iTunes * sort album
+* iTunes * sort album artist
+* iTunes * album rating
+* album love
+
+
+
+
+*Rate Object - Need to verify new columns to add to record*
 * genre
 * Star Ratings
 * Comments
-* Smart Playlist tags, several
+* iTunes * category
+* iTunes * description
+* iTunes * grouping
+* iTunes * kind
+* iTunes * sort artist
+* iTunes * sort album
+* iTunes * sort name
+* iTunes * greatest hits
+* my genre def1
+* my genre def2
+* my genre def 3
+* charted
+* Era
+* Personal era
+* mood 1
+* mood 2
+* mood 3
+* re-up frequency
+* date added
+* time on playlist
+
+
+
+
+
 
 
 
@@ -69,3 +212,6 @@ bundle exec figaro install
 
 
 Credit - https://github.com/guilhermesad/rspotify
+
+https://material.io/design/
+https://animista.net/
